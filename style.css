@@ -434,9 +434,9 @@ p.group {
   height: 80px;
   background-color: var(--chart);
   border-radius: 200px;
-  margin: 0 0 0 70%;
-   /* right: 33%; 
-   top: 812%;  */
+  /* margin: 0 0 0 70%; */
+    right: -6%; 
+   top: -7%;  
 }
 
 .new {

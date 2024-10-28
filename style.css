@@ -75,7 +75,6 @@ p {
   cursor: pointer;
   /*to change the mouse cursor to a pointer (usually a hand) when it hovers over an element*/
   font-weight: bold;
-
 }
 
 .top_button {
@@ -93,6 +92,8 @@ p {
   /*they won’t break onto a new line and will adjust to the width of their content*/
   align-items: center;
   border: 0;
+  font-weight: bold;
+  margin-left: 15px;
 }
 
 .butn:hover {
@@ -255,13 +256,12 @@ h2.box_line {
     color: var(--primary_text_color);
   }
 
-  p {
-    max-width: 41%;
+  p{
+    max-width: 40%;
     word-wrap: break-word;
     margin-bottom: 15%;
   }
 }
-
 
 .product_items {
   display: grid;
@@ -411,7 +411,7 @@ p.group {
 }
 
 .page p {
-  max-width: 77%;
+  max-width: 75%;
   word-wrap: break-word;
 }
 

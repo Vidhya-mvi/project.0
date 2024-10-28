@@ -47,7 +47,7 @@ p {
   justify-content: space-between;
   /*first item is aligned to the start, the last item to the end, and any additional space is evenly distributed between them*/
   align-items: center;
-  /* ligns all child elements along the vertical (cross) axis to the center, making them level within the container*/
+  /* aligns all child elements along the vertical (cross) axis to the center, making them level within the container*/
 }
 
 .hero-list {
@@ -533,6 +533,7 @@ height: 40px;
 .butn_fill.base {
  padding: 1% 1% 2% 1%;
  border-radius: 2px;
+ margin: 0;
 }
 
 /* **************************section 9**************************** */

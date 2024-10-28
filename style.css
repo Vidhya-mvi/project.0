@@ -1,4 +1,5 @@
-* {       /*Resets box-sizing, text decoration, and list style across all elements.  */
+* {
+  /*Resets box-sizing, text decoration, and list style across all elements.  */
   box-sizing: border-box;
   font-family: "Montserrat", serif;
   text-decoration: none;
@@ -16,34 +17,51 @@
   --dark: #BDBDBD;
 }
 
- .body {   /*  Removes default margins to standardize layout.  */
-  margin: 0; /* to control spacing between elements in a more customized way*/
+.body {
+  /*  Removes default margins to standardize layout.  */
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+/* to control spacing between elements in a more customized way*/
 }
-
+}
 .img {
   width: 100%;
 }
 
- .container {    /* Sets a maximum width and centers content.    */
-  max-width: 1050px;/*to control the size of an element within a flexible layout without allowing it to grow too large*/
+.container {
+  /* Sets a maximum width and centers content.    */
+  max-width: 1050px;
+  /*to control the size of an element within a flexible layout without allowing it to grow too large*/
   margin: 0 auto;
 }
 
 .hero-head {
-  display: flex; /* To fix the elements in specific positions within a container */
-  justify-content: space-between; /*first item is aligned to the start, the last item to the end, and any additional space is evenly distributed between them*/
-  align-items: center; /* ligns all child elements along the vertical (cross) axis to the center, making them level within the container*/
+  display: flex;
+  /* To fix the elements in specific positions within a container */
+  justify-content: space-between;
+  /*first item is aligned to the start, the last item to the end, and any additional space is evenly distributed between them*/
+  align-items: center;
+  /* ligns all child elements along the vertical (cross) axis to the center, making them level within the container*/
 }
 
 .hero-list {
   display: flex;
-  gap: 20px;/*control the spacing between child elements*/
-  padding: 0%;/*Padding creates space inside an element*/
+  gap: 20px;
+  /*control the spacing between child elements*/
+  padding: 0%;
+  /*Padding creates space inside an element*/
 
   a {
     color: var(--second_text_color);
   }
 }
+
 .title_btn {
   padding: 0% 23% 0% 0%;
   display: flex;
@@ -54,7 +72,8 @@
   color: var(--primary_text_color);
   border: none;
   border-radius: 5px;
-  cursor: pointer;/*to change the mouse cursor to a pointer (usually a hand) when it hovers over an element*/
+  cursor: pointer;
+  /*to change the mouse cursor to a pointer (usually a hand) when it hovers over an element*/
   font-weight: bold;
 
 }
@@ -70,7 +89,8 @@
   color: var(--main_background_color);
   padding: 3px 2px 5px 9px;
   border-radius: 3px;
-  display: inline-flex;/*they won’t break onto a new line and will adjust to the width of their content*/
+  display: inline-flex;
+  /*they won’t break onto a new line and will adjust to the width of their content*/
   align-items: center;
   border: 0;
 }
@@ -92,7 +112,7 @@
   display: block;
   margin: 0;
   padding: 6% 0 0 0;
-  
+
 
   h6 {
     color: var(--primary_text_color);
@@ -107,7 +127,8 @@
 
   p {
     max-width: 53%;
-    word-wrap: break-word; /* paragraphs automatically wrap to the next line without overflowing their container */
+    word-wrap: break-word;
+    /* paragraphs automatically wrap to the next line without overflowing their container */
     margin: 30px 0;
   }
 }
@@ -146,13 +167,15 @@
 /* **********************section 3************************ */
 .hero_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;/*the column structure of a grid container*/
+  grid-template-columns: 1fr 1fr 1fr;
+  /*the column structure of a grid container*/
   gap: 50px;
   padding: 7% 0 0 0;
 }
 
 .grid-item {
-  box-shadow: 0px 11px 14px 2px rgba(0, 0, 0, 0.07);/* used to add shadow effects around an element's frame*/
+  box-shadow: 0px 11px 14px 2px rgba(0, 0, 0, 0.07);
+  /* used to add shadow effects around an element's frame*/
   border-radius: 2px;
   max-width: fit-content;
 
@@ -397,11 +420,13 @@ p.group {
 }
 
 .page.card {
-  position: relative;/*move it without affecting the layout of other elements*/
-}
+  position: relative;
+  /*move it without affecting the layout of other elements*/
+} 
 
 .new {
-  position: absolute;/* to position an element relative to its nearest positioned ancestor */
+   position: absolute; 
+  /* to position an element relative to its nearest positioned ancestor */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -409,12 +434,14 @@ p.group {
   height: 80px;
   background-color: var(--chart);
   border-radius: 200px;
-  right: 33%;
+   right: 33%; 
+   top: 736%; 
 }
 
 .new {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
+  font-weight: bold;
   color: var(--main_background_color);
 }
 
@@ -445,76 +472,98 @@ p.group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20%;
-   margin-bottom:8% ;
+  margin-bottom: 8%;
 }
-.open img{
+
+.open img {
   border-radius: 100px;
 }
-.column{
+
+.column {
   display: block;
   text-align: center;
-  p{
+
+  p {
     max-width: 85%;
     margin: 20px 20px;
     word-wrap: break-word;
   }
 }
-.fa-regular.fa-star{
+
+.fa-regular.fa-star {
   color: var(--star-color);
 }
+
 /* *****************************section 8******************************8 */
-.irregular{
-background-color: var(--post_background_color);
+.irregular {
+  background-color: var(--post_background_color);
 }
-.hero-bottum{
+
+.hero-bottum {
   display: block;
-  text-align: center;/*The text inside will align to the center of its container.*/
-  h6{
-   padding: 10% 0 0 0;
-   color: var(--primary_text_color);
+  text-align: center;
+
+  /*The text inside will align to the center of its container.*/
+  h6 {
+    padding: 10% 0 0 0;
+    color: var(--primary_text_color);
   }
-  p{
-  max-width: 73%;
-  word-wrap: break-word;
-  padding: 0 0 0 25%;
+
+  p {
+    max-width: 73%;
+    word-wrap: break-word;
+    padding: 0 0 0 25%;
   }
 }
-.input-bar{
-padding: 1% 37% 1% 1%;
-margin-bottom: 8%;
+.together{
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 5% 0;
 }
-.butn_fill.base{
-  padding: 1% ;
-  right: 26%;
-  border-radius:3px ;
+.input-bar {
+  padding: 1% 37% 1% 1%;
+  outline: none;
+  width: 605px;
+height: 40px;
+
+
 }
+
+.butn_fill.base {
+ padding: 1% 1% 2% 1%;
+ border-radius: 2px;
+}
+
 /* **************************section 9**************************** */
-.active{
+.active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 5px;
 }
-  .dark ul a{
+
+.dark ul a {
   color: var(--primary_text_color);
-  font-size:130%;
+  font-size: 130%;
   padding: 0 9px 0 0;
+}
+
+.jet {
+  display: inline-block;
+}
+  li a {
+    color: var(--second_text_color);
   }
 
-.jet{
-  display: inline-block;
-  a{
- color: var(--second_text_color);
-
-}
-}
 li a:hover {
   color: var(--primary_text_color);
 }
+
 /* *************section 10*************************************** */
-.footer{
-  background-color:#FAFAFA;
+.footer {
+  background-color: #FAFAFA;
 }
-.last{
+
+.last {
   text-align: center;
   padding: 18px 0 15px 0;
 }

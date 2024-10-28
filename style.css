@@ -419,13 +419,13 @@ p.group {
   padding: 5% 18% 5% 18%;
 }
 
-.page.card {
+ .page {
   position: relative;
   /*move it without affecting the layout of other elements*/
-} 
+}  
 
 .new {
-   position: absolute; 
+   position: absolute;   
   /* to position an element relative to its nearest positioned ancestor */
   display: flex;
   align-items: center;
@@ -434,8 +434,9 @@ p.group {
   height: 80px;
   background-color: var(--chart);
   border-radius: 200px;
-   right: 33%; 
-   top: 736%; 
+  margin: 0 0 0 70%;
+   /* right: 33%; 
+   top: 812%;  */
 }
 
 .new {
@@ -541,7 +542,7 @@ height: 40px;
   gap: 5px;
 }
 
-.dark ul a {
+.dark li a {
   color: var(--primary_text_color);
   font-size: 130%;
   padding: 0 9px 0 0;
@@ -550,6 +551,7 @@ height: 40px;
 .jet {
   display: inline-block;
 }
+
   li a {
     color: var(--second_text_color);
   }

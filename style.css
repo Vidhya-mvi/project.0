@@ -554,6 +554,8 @@ height: 40px;
 
   li a {
     color: var(--second_text_color);
+    font-weight: 600;
+  
   }
 
 li a:hover {
